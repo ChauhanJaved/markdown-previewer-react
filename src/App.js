@@ -1,9 +1,9 @@
 import './App.css';
 
-function App() {
+function App() {  
   return (
     <>
-    <h1>Markdown Previewer</h1>
+    <h1 style={{textAlign: "center"}}>Markdown Previewer</h1>
     </>
   );
 }
