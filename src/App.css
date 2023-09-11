@@ -1,10 +1,8 @@
 body, html {
+   height: 100%;
    margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   height: 100vh;
-}
+   padding: 0;  
+ } 
 h1 {
    background-color: #333;
    color: white;
@@ -12,21 +10,30 @@ h1 {
    text-align: center;
    margin: 0;
 }
-.app-container {
+textarea {
+   height: 100%;
+   width: 100%;   
+   resize: none;
+   margin: 0;
+   padding: 0;
+}
+.app-container {   
+   display: flex;
    flex: 1;
+   flex-direction: column;   
+   height: 100%;
+   border: 3px solid;
 }
 .container{
-   display: flex;   
-   flex: 1;
-   border: solid 1px red;   
+   display: flex;         
+   height: 100%;
 }
 .editor,
 .preview{
-   flex: 1;
+   flex: 1;   
    border: 1px solid #ccc;
    padding: 10px;
-   overflow: auto;
-   height: 100%;
+   overflow: auto;   
 }
 .resize-handle {
    width: 10px;
