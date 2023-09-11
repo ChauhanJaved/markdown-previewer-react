@@ -1,3 +1,35 @@
+body, html {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+h1 {
+   background-color: #333;
+   color: white;
+   padding: 10px;
+   text-align: center;
+   margin: 0;
+}
+.app-container {
+   flex: 1;
+}
+.container{
+   display: flex;   
+   flex: 1;
+   border: solid 1px red;   
+}
+.editor,
 .preview{
-   border: 1px solid;
+   flex: 1;
+   border: 1px solid #ccc;
+   padding: 10px;
+   overflow: auto;
+   height: 100%;
+}
+.resize-handle {
+   width: 10px;
+   cursor:col-resize;
+   background-color: #333;
 }

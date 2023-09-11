@@ -8,22 +8,25 @@ function App() {
     setMarkdownText(e.target.value);
   }
   return (
-    <div>
-      <textarea 
-        id="editor" 
-        rows="10"
-        cols="20"
-        value={markdownText}
-        onChange={handleMarkdownChange}
-        placeholder='Enter your Markdown here...'
-      >
+    <div className="app-container">
+        <h1>Markdown Previewer</h1>    
+        <div className="container">
+          <div className="editor">
+            <textarea id="editor"
+            value={markdownText}
+            onChange={handleMarkdownChange}
+            placeholder='Enter your Markdown here...'
+            />    
+          </div>
+          <div className="resize-handle"></div>
 
-      </textarea>
-      <ReactMarkdown id="preview" className="preview">
-        {markdownText}
-      </ReactMarkdown>
+
+          <div className="preview">
+            <ReactMarkdown id="prdeview"  children={markdownText} />       
+          </div>
+        </div>
     </div>
+    
   );
 }
-
 export default App;
